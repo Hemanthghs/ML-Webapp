@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Classification Web App</title>
+</head>
+
+<body>
+    <center>
+        <h1>Iris Classification Web App</h1>
+        <hr>
+        <h2>Enter the feature values</h2>
+        <form action="/predict" method="post">
+            Enter Sepal Length: <input type="text" name="sepal_length">
+            <br><br>
+            Enter Sepal Width: <input type="text" name="sepal_width">
+            <br><br>
+            Enter Petal Length: <input type="text" name="petal_length">
+            <br><br>
+            Enter Petal Width: <input type="text" name="petal_width">
+            <br><br>
+            <button type="submit"><b>Predict</b></button>
+        </form>
+        <hr>
+        <h2>Prediction: {{result}}</h2>
+        <hr>
+    </center>
+</body>
+
+</html>
+
+
+
